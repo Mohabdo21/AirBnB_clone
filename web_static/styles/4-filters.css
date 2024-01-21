@@ -6,7 +6,7 @@
   border: 1px solid #dddddd;
 }
 
-button {
+.filters button {
   float: right;
   margin-top: 11px;
   font-size: 18px;
@@ -22,6 +22,6 @@ button {
   margin-right: 30px;
 }
 
-button:hover {
+.filters button:hover {
   opacity: 0.9;
 }
