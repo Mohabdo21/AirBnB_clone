@@ -1,3 +1,4 @@
+/* Filters style */
 .filters {
   color: white;
   height: 70px;
@@ -6,6 +7,7 @@
   border: 1px solid #dddddd;
 }
 
+/* Filters button style */
 .filters button {
   float: right;
   margin-top: 11px;

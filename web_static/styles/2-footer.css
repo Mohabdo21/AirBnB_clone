@@ -1,3 +1,4 @@
+/* Footer style */
 footer {
   background-color: green;
   height: 60px;
@@ -9,6 +10,7 @@ footer {
   justify-content: center;
 }
 
+/* Footer text style */
 .in-footer {
   margin: 0;
 }

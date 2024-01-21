@@ -1,3 +1,4 @@
+/* Places class style */
 .places {
   display: flex;
   margin: 15px auto;
@@ -6,6 +7,7 @@
   flex-wrap: wrap;
 }
 
+/* Places h1 style */
 .places h1 {
   display: block;
   width: 100%;
@@ -16,6 +18,7 @@
   font-size: 30px;
 }
 
+/* Places article style */
 .places article {
   display: flex;
   width: 390px;
@@ -31,6 +34,7 @@
   text-align: center;
 }
 
+/* Article h2 style */
 article h2 {
   font-size: 30px;
   padding: 0px;
