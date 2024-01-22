@@ -2,10 +2,10 @@
 /* Places section style */
 .places {
   display: flex;
+  margin: 15px auto;
+  text-align: center;
+  justify-content: center;
   flex-wrap: wrap;
-  /* Allows the articles to wrap onto the next line */
-  justify-content: space-between;
-  /* Distributes space evenly between the articles */
 }
 
 /* Header style */

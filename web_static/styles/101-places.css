@@ -1,46 +1,41 @@
 /* Places Section */
-/* Places section style */
 .places {
   display: flex;
+  margin: 15px auto;
+  text-align: center;
+  justify-content: center;
   flex-wrap: wrap;
-  /* Allows the articles to wrap onto the next line */
-  justify-content: space-between;
-  /* Distributes space evenly between the articles */
-}
-
-/* Header style */
-.places article .header {
-  display: flex;
-  justify-content: space-between;
-  /* Aligns items on the horizontal line */
-  align-items: center;
-  /* Aligns items on the vertical line */
 }
 
 .places h1 {
   display: block;
   width: 100%;
-  margin-top: 10px;
-  margin-left: 0;
+  margin-top: 0px;
+  margin-left: 20px;
   margin-bottom: 5px;
   text-align: left;
   font-size: 30px;
 }
 
-/* Article style */
 .places article {
   display: flex;
-  flex-direction: column;
-  /* Stacks the content of the article vertically */
-  flex-basis: calc(33.33% - 20px);
-  margin: 10px;
-  /* Adds some margin around each article */
+  width: 390px;
+  margin: 20px;
+  padding: 10px 20px;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+  text-align: center;
 }
 
 article h2 {
   font-size: 30px;
   padding: 10px;
-  margin-right: 10px;
+  margin: 10px auto;
 }
 
 /* class price_by_night */
@@ -58,7 +53,6 @@ article h2 {
   margin-top: 5px;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
 }
 
 /* information class */
