@@ -4,9 +4,9 @@ footer {
   height: 60px;
   width: 100%;
   border-top: solid 1px #cccccc;
-  position: relative;
   bottom: 0;
   display: flex;
+  margin-top: auto;
   align-items: center;
   justify-content: center;
 }
