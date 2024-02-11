@@ -4,7 +4,6 @@
 import sys
 import unittest
 from io import StringIO
-from unittest.mock import create_autospec
 
 import models
 from console import HBNBCommand
