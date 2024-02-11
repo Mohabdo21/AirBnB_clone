@@ -1,14 +1,16 @@
-![welcome](https://github.com/Mohabdo21/AirBnB_clone/blob/main/image.jpeg?raw=true)
+![welcome](https://github.com/Mohabdo21/AirBnB_clone/blob/main/images/image.jpeg?raw=true)
 
 # AirBnB Clone - The Console
 
 ## Overview
+
 Welcome to the AirBnB clone project! This is the first step towards building our first full web application. The console created in this project will be used in all other following projects: HTML/CSS templating, database storage, API, front-end integration.
 
 This project is done by the team: Sara Khalid Mustafa and Mohannad Babeker.
 
 ## Features
-![project stages](https://github.com/Mohabdo21/AirBnB_clone/blob/main/process.png?raw=true)
+
+![project stages](https://github.com/Mohabdo21/AirBnB_clone/blob/main/images/process.png?raw=true)
 
 The project has the following features:
 
@@ -19,6 +21,7 @@ The project has the following features:
 - Unittests to validate all our classes and storage engine.
 
 ## Learning Objectives
+
 This project will help us to learn about:
 
 - Creating a Python package.
@@ -28,11 +31,13 @@ This project will help us to learn about:
 - Writing and reading a JSON file.
 - Managing datetime.
 - Understanding and using UUID.
-- Using *args and **kwargs in Python.
+- Using \*args and \*\*kwargs in Python.
 - Handling named arguments in a function.
 
 ## Getting Started
+
 To get started with this project, clone this repository and navigate to the project directory. Run the console file to start the command interpreter.
+
 ```
 $ git clone https://github.com/Mohabdo21/AirBnB_clone.git
 
@@ -42,7 +47,9 @@ $ ./console.py
 ```
 
 ## Usage
+
 Interactive Mode:
+
 ```
 $ ./console.py
 (hbnb) help
@@ -55,6 +62,7 @@ EOF  all  count  create  destroy  help  quit  show  update
 ```
 
 It Also can run on Non-Interactive mode:
+
 ```
 $ echo "help" | ./console.py
 (hbnb)
@@ -66,14 +74,14 @@ EOF  all  count  create  destroy  help  quit  show  update
 ```
 
 ## Commands:
--   `create` - create an object
--   `show` - show an object (based on id)
--   `destroy` - destroy an object
--   `all` - show all objects, of one type or all types
--   `update` - Updates an instance based on the class name and id
--   `quit/EOF` - quit the console
--   `help` - see descriptions of commands
 
+- `create` - create an object
+- `show` - show an object (based on id)
+- `destroy` - destroy an object
+- `all` - show all objects, of one type or all types
+- `update` - Updates an instance based on the class name and id
+- `quit/EOF` - quit the console
+- `help` - see descriptions of commands
 
 To start console type in shell
 
@@ -83,10 +91,9 @@ AirBnB_clone$ ./console.py
 
 ```
 
-------------------------------------------------------
+---
 
-Create
-======
+# Create
 
 To create an object use command `create`:
 
@@ -95,8 +102,7 @@ To create an object use command `create`:
 
 ```
 
-Show
-====
+# Show
 
 To show an instance based on the class name and id. Ex:
 
@@ -105,8 +111,7 @@ To show an instance based on the class name and id. Ex:
 
 ```
 
-Destroy
-=======
+# Destroy
 
 To Delete an instance of an object using class name and id `destroy <class_name id>`. Ex:
 
@@ -115,9 +120,7 @@ To Delete an instance of an object using class name and id `destroy <class_name 
 
 ```
 
-
-All
-===
+# All
 
 `all` or `all <class_name>` to display the instance of all classes or the selected class Ex:
 
@@ -126,8 +129,7 @@ All
 
 ```
 
-Update
-======
+# Update
 
 Updates an instance attributes based on the class name and id:
 
@@ -136,13 +138,11 @@ Updates an instance attributes based on the class name and id:
 
 ```
 
-Quit
-====
+# Quit
 
 `quit` or `EOF` to terminate the console.
 
-Help
-====
+# Help
 
 To Display information and usage of available commands:
 
@@ -162,16 +162,14 @@ Usage: all or all <class> or <class>.all()
 (hbnb)
 ```
 
+# Supported classes:
 
-Supported classes:
-==================
+- BaseModel
+- User
+- State
+- City
+- Amenity
+- Place
+- Review
 
--   BaseModel
--   User
--   State
--   City
--   Amenity
--   Place
--   Review
-
-![repr of the json file](https://github.com/Mohabdo21/AirBnB_clone/blob/main/jsoncrack.com.jpeg?raw=true)
+![repr of the json file](https://github.com/Mohabdo21/AirBnB_clone/blob/main/images/jsoncrack.com.jpeg?raw=true)
