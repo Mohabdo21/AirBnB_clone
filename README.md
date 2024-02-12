@@ -83,9 +83,11 @@ The console supports several commands for managing your objects:
 - `show` - show an object (based on id)
 - `destroy` - destroy an object
 - `all` - show all objects, of one type or all types
+- `count` - Retrieves the number of instances of a given class
 - `update` - Updates an instance based on the class name and id
 - `quit/EOF` - quit the console
 - `help` - see descriptions of commands
+
 
 ### `create`
 
