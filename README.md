@@ -38,17 +38,18 @@ This project will help us to learn about:
 
 To get started with this project, clone this repository and navigate to the project directory. Run the console file to start the command interpreter.
 
-```
+```bash
 $ git clone https://github.com/Mohabdo21/AirBnB_clone.git
 
 $ cd AirBnB_clone/
 
 $ ./console.py
 ```
+You should see the console prompt `(hbnb)` .
 
 ## Usage
 
-Interactive Mode:
+**Interactive Mode**:
 
 ```
 $ ./console.py
@@ -61,7 +62,7 @@ EOF  all  count  create  destroy  help  quit  show  update
 (hbnb)
 ```
 
-It Also can run on Non-Interactive mode:
+It Also can run on **Non-Interactive** mode:
 
 ```
 $ echo "help" | ./console.py
@@ -73,7 +74,10 @@ EOF  all  count  create  destroy  help  quit  show  update
 (hbnb)
 ```
 
-## Commands:
+Console Commands
+----------------
+
+The console supports several commands for managing your objects:
 
 - `create` - create an object
 - `show` - show an object (based on id)
@@ -83,64 +87,105 @@ EOF  all  count  create  destroy  help  quit  show  update
 - `quit/EOF` - quit the console
 - `help` - see descriptions of commands
 
-To start console type in shell
+### `create`
 
-```
-AirBnB_clone$ ./console.py
-(hbnb)
+Creates a new instance of a given class, saves it to the JSON file, and prints the `id`.
 
-```
+Usage: `create <class>`
 
----
-
-# Create
-
-To create an object use command `create`:
+Example:
 
 ```
 (hbnb) create BaseModel
+49faff9a-6318-451f-87b6-910505c55907
 
 ```
 
-# Show
+### `show`
 
-To show an instance based on the class name and id. Ex:
+Prints the string representation of an instance based on the class name and `id`.
 
-```
-(hbnb) show BaseModel 1234-1234-1234.
+Usage: `show <class> <id>` or `<class>.show(<id>)`
 
-```
-
-# Destroy
-
-To Delete an instance of an object using class name and id `destroy <class_name id>`. Ex:
+Example:
 
 ```
-(hbnb) destroy BaseModel 1234-1234-1234.
+(hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
+[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'id': '49faff9a-6318-451f-87b6-910505c55907', 'updated_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903300)}
 
 ```
 
-# All
+### `destroy`
 
-`all` or `all <class_name>` to display the instance of all classes or the selected class Ex:
+Deletes an instance based on the class name and `id`.
 
-```
-(hbnb) all or all State
+Usage: `destroy <class> <id>` or `<class>.destroy(<id>)`
 
-```
-
-# Update
-
-Updates an instance attributes based on the class name and id:
+Example:
 
 ```
-(hbnb) update BaseModel 1234-1234-1234 email "aibnb@holbertonschool.com"
+(hbnb) destroy BaseModel 49faff9a-6318-451f-87b6-910505c55907
 
 ```
 
-# Quit
+### `all`
 
-`quit` or `EOF` to terminate the console.
+Shows all instances of a given class. If no class is specified, it displays all instantiated objects.
+
+Usage: `all` or `all <class>` or `<class>.all()`
+
+Example:
+
+```
+(hbnb) all BaseModel
+["[BaseModel] (2dd6ef5c-467c-4f82-9521-a772ea7d84e9) {'id': '2dd6ef5c-467c-4f82-9521-a772ea7d84e9', 'created_at': datetime.datetime(2017, 10, 2, 3, 11, 23, 639717), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 23, 639724)}", "[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'first_name': 'Betty', 'id': '49faff9a-6318-451f-87b6-910505c55907', 'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 3, 49401)}"]
+
+```
+
+### `count`
+
+Retrieves the number of instances of a given class.
+
+Usage: `count <class>` or `<class>.count()`
+
+Example:
+
+```
+(hbnb) User.count()
+2
+
+```
+
+### `update`
+
+Updates an instance based on the class name and `id` by adding or updating an attribute.
+
+Usage:
+
+-   `update <class> <id> <attribute_name> <attribute_value>`
+-   `<class>.update(<id>, <attribute_name>, <attribute_value>)`
+-   `<class>.update(<id>, <dictionary>)`
+
+Example:
+
+```
+(hbnb) User.update("38f22813-2753-4d42-b37c-57a17f1e4f88", "first_name", "John")
+(hbnb) User.update("38f22813-2753-4d42-b37c-57a17f1e4f88", "age", 89)
+
+```
+
+### `quit` and `EOF`
+
+These commands are used to exit the program.
+
+Usage: `quit` or `EOF`
+
+Example:
+
+```
+(hbnb) quit
+
+```
 
 # Help
 
@@ -161,6 +206,19 @@ Usage: all or all <class> or <class>.all()
         all instatiated objects
 (hbnb)
 ```
+
+Error Messages
+--------------
+
+If you enter a command incorrectly, the console will print an error message. For example, if you try to create an instance of a class that doesn't exist, you'll see the message `** class doesn't exist **`.
+
+```
+(hbnb) all MyModel
+** class doesn't exist **
+
+```
+
+That's it! You're now ready to manage your AirBnB objects using the HBNB console. Enjoy!
 
 # Supported classes:
 
